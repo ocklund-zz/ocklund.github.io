@@ -1,0 +1,45 @@
+---
+title: Home
+layout: default
+---
+			<div class="grid" id="main-grid">
+				<section id="intro">
+					<h3><a href="#intro">Kenneth Ocklund</a></h3>
+					<p>I write code and fiction. Read my action packed novel "Shivas tredje öga" (in Swedish). Out now as e-book at iTunes and Google Play.</p>
+					<p><a href="https://itunes.apple.com/se/book/shivas-tredje-oga/id989530003?mt=11&at=&ct=SV_se&ign-mpt=uo%3D6">
+            		<img src="/images/shivas_cover.jpg", width="150", height="225", class="shadow img-center"></a></p>
+        			<p><a href="https://itunes.apple.com/se/book/shivas-tredje-oga/id989530003?mt=11&at=&ct=SV_se&ign-mpt=uo%3D6">
+            		<img src="/images/ibooks_se.jpg", width="129", height="46", alt="Get it on iTunes" class="img-center"></a></p>
+					<p><a href="https://play.google.com/store/books/details/Kenneth_Ocklund_Shivas_tredje_%C3%B6ga?id=APQ3CQAAQBAJ">
+            		<img src="/images/google_play.png", width="129", height="45", alt="Get it on Google Play" class="img-center"></a></p>
+				</section>
+				<section id="blog">
+					<h3><a href="#blog">Blog</a></h3>
+					<ul>
+						{% for post in site.posts %}
+						<li>
+							<p><strong>{{ post.date | date: "%Y-%m-%d" }}</strong></p>
+							{{ post.excerpt | truncatewords: 50 }}
+							{% if post.content.size > post.excerpt.size %}
+							<p><a href="{{ post.url }}">Read more...</a></p>
+							{% endif %}
+						</li>
+						{% endfor %}
+					</ul>
+				</section>
+				<section id="contact">
+					<h3><a href="#contact">Contact Me</a></h3>
+					<p>
+						<form action="https://getsimpleform.com/messages?form_api_token=de3534cb6555f35962166d34c13449f4" method="post">
+						<ul>
+							<li><input type="text" name="name" id="name" placeholder="Name" size="37" /></li>
+							<li><input type="text" name="email" id="email" placeholder="E-mail"  size="37" /></li>
+							<li><textarea name="message" id="message" placeholder="Message" cols="35" rows="4"></textarea></li>
+  							<li><input type='submit' value='Send' /></li>
+  						</ul>
+						</form>
+					</p>
+					<p><a href="https://twitter.com/ocklund">Twitter</a> | <a href="https://www.linkedin.com/in/ocklund">LinkedIn</a></p>
+				</section>
+			</div>
+		</div>
