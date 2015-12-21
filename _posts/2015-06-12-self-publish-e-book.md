@@ -1,9 +1,9 @@
 ---
 title: Self Publish E-book
-layout: post
+layout: amp
 ---
 ## Self Publish E-book
-<img src="/images/desk.jpg" class="shadow img-center" />
+<amp-img src="/images/desk.jpg" alt="Old desktop" width="500" height="375"></amp-img>
 Not to long ago I published my novel [“Shivas tredje öga”](https://itunes.apple.com/se/book/shivas-tredje-oga/id989530003?mt=11&at=&ct=SV_se&ign-mpt=uo%3D6) ("Shiva's Third Eye") as e-book. This is a short summary how I did this. Hopefully it may help someone about to jump down the same rabbit hole. It's mostly about publishing an ordinary e-book with flowing text, not a photo book or something with an advanced layout.
 
 But remember: I'm not saying that this is the right way. I don't know if self publishing is for you or how to get a lot of readers. OK? Let's get to it.
@@ -61,8 +61,8 @@ OK, so what did I learn when self-publishing my e-book? Here are som thoughts:
 ### The e-book
 Well, what's this e-book that I published myself? Here it is:
 
-[ ![Cover](/images/shivas_cover.jpg "Shivas tredje öga") ](https://itunes.apple.com/se/book/shivas-tredje-oga/id989530003?mt=11&at=&ct=SV_se&ign-mpt=uo%3D6 "iTunes")
+<a href="https://itunes.apple.com/se/book/shivas-tredje-oga/id989530003?mt=11&at=&ct=SV_se&ign-mpt=uo%3D6"><amp-img src="/images/shivas_cover.jpg" alt="Book cover" width="150" height="225"></amp-img></a>
 
-[ ![iTunes](/images/ibooks_se.jpg "Download from iTunes") ](https://itunes.apple.com/se/book/shivas-tredje-oga/id989530003?mt=11&at=&ct=SV_se&ign-mpt=uo%3D6 "iTunes")
+<a href="https://itunes.apple.com/se/book/shivas-tredje-oga/id989530003?mt=11&at=&ct=SV_se&ign-mpt=uo%3D6"><amp-img src="/images/ibooks_se.jpg" alt="Download from iTunes" width="129" height="46" class="flat"></amp-img></a>
 
-[ ![Google Play](/images/google_play.png "Download from Google Play") ](https://play.google.com/store/books/details/Kenneth_Ocklund_Shivas_tredje_%C3%B6ga?id=APQ3CQAAQBAJ "Google Play")
+<a href="https://play.google.com/store/books/details/Kenneth_Ocklund_Shivas_tredje_%C3%B6ga?id=APQ3CQAAQBAJ"><amp-img src="/images/google_play.png" alt="Download from Google Play" width="129" height="45" class="flat"></amp-img></a>
