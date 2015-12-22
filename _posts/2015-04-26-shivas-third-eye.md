@@ -3,7 +3,6 @@ title: Shiva's Third Eye
 layout: amp
 ---
 ## Shiva's Third Eye
-
 <amp-img src="/images/shivas_detail_w320.jpg" srcset="/images/shivas_detail_w500.jpg 500w, /images/shivas_detail_w320.jpg 320w" alt="Shiva's Third Eye - book cover" sizes="95vw" width="500" height="313"></amp-img>
 My novel "Shivas tredje öga" ("Shiva's Third Eye") is now available as e-book in iTunes and Google Play (in Swedish). I wrote it in 2012, but I didn't publish the novel until now as an experiment to see how difficult it was to publish an e-book by yourself. Turned out it was both easier and harder than imagined, which I will tell you more about in a future post.
 
