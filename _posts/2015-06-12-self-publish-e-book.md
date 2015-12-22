@@ -3,7 +3,7 @@ title: Self Publish E-book
 layout: amp
 ---
 ## Self Publish E-book
-<amp-img src="/images/desk.jpg" alt="Old desktop" width="500" height="375"></amp-img>
+<amp-img src="/images/desk_w320.jpg" srcset="/images/desk_w500.jpg 500w, /images/desk_w320.jpg 320w" alt="Old desktop" sizes="95vw" width="500" height="375"></amp-img>
 Not to long ago I published my novel [“Shivas tredje öga”](https://itunes.apple.com/se/book/shivas-tredje-oga/id989530003?mt=11&at=&ct=SV_se&ign-mpt=uo%3D6) ("Shiva's Third Eye") as e-book. This is a short summary how I did this. Hopefully it may help someone about to jump down the same rabbit hole. It's mostly about publishing an ordinary e-book with flowing text, not a photo book or something with an advanced layout.
 
 But remember: I'm not saying that this is the right way. I don't know if self publishing is for you or how to get a lot of readers. OK? Let's get to it.

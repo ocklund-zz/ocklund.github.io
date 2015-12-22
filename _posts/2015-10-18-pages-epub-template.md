@@ -3,7 +3,7 @@ title: Pages ePub template
 layout: amp
 ---
 ## Pages ePub template
-<amp-img src="/images/pages_epub_template.png" alt="Screenshot Apple Pages" width="500" height="356"></amp-img>
+<amp-img src="/images/pages_screen_w320.jpg" srcset="/images/pages_screen_w500.jpg 500w, /images/pages_screen_w320.jpg 320w" alt="Screenshot Apple Pages" sizes="95vw" width="500" height="360" class="flat"></amp-img>
 As I was telling you in one of my previous posts ([Self Publish E-book](/2015/06/12/self-publish-e-book.html)), I prefer the Apple software Pages for creating e-books with flowing text. I thought it odd, however, that Pages, which can export to the ePub format, didn't come with a decent ePub template. Apple just kept referring to a pretty lame ["best practices" template](https://support.apple.com/en-us/HT202066), which I found unusable, even though it looked quite basic. Instead I started from scratch with my own template to get a simple layout that was easy to work with.
 
 Pages was updated to version 5.6 in the beginning of October 2015. Now they've finally included a ePub template. It looks fairly simple and it even contains better instructions how you should use it compared to the "best practices" template. I might base my template for the upcoming book on it. Let's see if it holds water.
