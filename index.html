@@ -19,7 +19,7 @@ layout: default
 						{% for post in site.posts %}
 						<li>
 							<p><strong>{{ post.date | date: "%Y-%m-%d" }}</strong></p>
-							{{ post.excerpt | truncatewords: 50 }}
+							{{ post.excerpt | replace:'<amp-','<' | remove:'width="500"' | replace:'height=','data=' | truncatewords:50 }}
 							{% if post.content.size > post.excerpt.size %}
 							<p><a href="{{ post.url }}">Read more...</a></p>
 							{% endif %}
