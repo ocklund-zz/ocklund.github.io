@@ -3,3 +3,5 @@ author: "Kenneth Ocklund"
 description: "Personal web site about and by Kenneth Ocklund."
 timezone: Europe/Stockholm
 url: "http://www.ocklund.com"
+gems:
+  - jekyll-sitemap
