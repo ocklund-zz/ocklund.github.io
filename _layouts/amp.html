@@ -24,7 +24,7 @@
         "headline": "{{ page.title }}",
         "image": {
           "@type": "ImageObject",
-          "url": "{{ page.image-url }}",
+          "url": "{{ site.url }}{{ page.image-url }}",
           "width": {{ page.image-width }},
           "height": {{ page.image-height }}
         },
@@ -39,9 +39,9 @@
           "name": "Talento Media",
           "logo": {
             "@type": "ImageObject",
-            "url": "/images/logo_tm_200x79.jpg",
-            "width": 200,
-            "height": 79
+            "url": "{{ site.url }}/images/logo_tm_152x60.jpg",
+            "width": 152,
+            "height": 60
           }
         },
         "description": "{{ page.excerpt | strip_html | strip_newlines }}"
