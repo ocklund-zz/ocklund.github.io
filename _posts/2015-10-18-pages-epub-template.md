@@ -1,9 +1,9 @@
 ---
 title: Pages ePub template
 layout: amp
-image-url: /images/pages_screen_w320.jpg
-image-width: 320
-image-height: 230
+image-url: /images/pages_screen_w500.jpg
+image-width: 500
+image-height: 360
 ---
 ## Pages ePub template
 <amp-img src="/images/pages_screen_w320.jpg" srcset="/images/pages_screen_w500.jpg 500w, /images/pages_screen_w320.jpg 320w" alt="Screenshot Apple Pages" sizes="95vw" width="500" height="360" class="flat"></amp-img>

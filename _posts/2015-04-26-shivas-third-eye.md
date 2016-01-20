@@ -1,9 +1,9 @@
 ---
 title: Shiva's Third Eye
 layout: amp
-image-url: /images/shivas_detail_w320.jpg
-image-width: 320
-image-height: 200
+image-url: /images/shivas_detail_w500.jpg
+image-width: 500
+image-height: 313
 ---
 ## Shiva's Third Eye
 <amp-img src="/images/shivas_detail_w320.jpg" srcset="/images/shivas_detail_w500.jpg 500w, /images/shivas_detail_w320.jpg 320w" alt="Shiva's Third Eye - book cover" sizes="95vw" width="500" height="313"></amp-img>
