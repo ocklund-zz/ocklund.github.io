@@ -1,6 +1,9 @@
 ---
 title: Self Publish E-book
 layout: amp
+image-url: /images/desk_w320.jpg
+image-width: 320
+image-height: 240
 ---
 ## Self Publish E-book
 <amp-img src="/images/desk_w320.jpg" srcset="/images/desk_w500.jpg 500w, /images/desk_w320.jpg 320w" alt="Old desktop" sizes="95vw" width="500" height="375"></amp-img>

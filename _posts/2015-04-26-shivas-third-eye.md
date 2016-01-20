@@ -1,10 +1,13 @@
 ---
 title: Shiva's Third Eye
 layout: amp
+image-url: /images/shivas_detail_w320.jpg
+image-width: 320
+image-height: 200
 ---
 ## Shiva's Third Eye
 <amp-img src="/images/shivas_detail_w320.jpg" srcset="/images/shivas_detail_w500.jpg 500w, /images/shivas_detail_w320.jpg 320w" alt="Shiva's Third Eye - book cover" sizes="95vw" width="500" height="313"></amp-img>
-My novel "Shivas tredje öga" ("Shiva's Third Eye") is now available as e-book in iTunes and Google Play (in Swedish). I wrote it in 2012, but I didn't publish the novel until now as an experiment to see how difficult it was to publish an e-book by yourself. Turned out it was both easier and harder than imagined, which I will tell you more about in a future post.
+My novel "Shivas tredje öga" ("Shiva's Third Eye") is now available as e-book in iTunes and Google Play (in Swedish). I wrote it in 2012, but I didn't publish the novel until now as an experiment to see how difficult it was to publish an e-book by yourself. Turned out it was both easier and harder than imagined, which I will tell you more about in a future post. {{ page.foo }}
 
 My idea with this novel from the beginning was to write a book I myself would like to read - a short, straight story where dialog and events drive the story forward, rather than long descriptions of characters, places and courses of events. This means also that I try to give the reader a chance to create her own image of the characters. Some readers are probably not used to this, but for me it's a relief not being told in detail what to think.
 

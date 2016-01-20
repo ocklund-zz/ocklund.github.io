@@ -6,8 +6,8 @@
     <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     {% if page.excerpt %}
-    <meta name="description" content="{{ page.excerpt| strip_html }}" />
-    <meta property="og:description" content="{{ page.excerpt| strip_html }}" />
+    <meta name="description" content="{{ page.excerpt | strip_html | strip_newlines }}" />
+    <meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines }}" />
     {% else %}
     <meta name="description" content="{{ site.description }}">
     <meta property="og:description" content="{{ site.description }}" />
@@ -22,7 +22,29 @@
         "@context": "http://schema.org",
         "@type": "BlogPosting",
         "headline": "{{ page.title }}",
-        "datePublished": "{{ page.date }}"
+        "image": {
+          "@type": "ImageObject",
+          "url": "{{ page.image-url }}",
+          "width": {{ page.image-width }},
+          "height": {{ page.image-height }}
+        },
+        "datePublished": "{{ page.date }}",
+        "dateModified": "{{ page.date }}",
+        "author": {
+          "@type": "Person",
+          "name": "{{ site.author }}"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Talento Media",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "/images/logo_tm_200x79.jpg",
+            "width": 200,
+            "height": 79
+          }
+        },
+        "description": "{{ page.excerpt | strip_html | strip_newlines }}"
       }
     </script>
     <style>body {opacity: 0}</style><noscript><style>body {opacity: 1}</style></noscript>
