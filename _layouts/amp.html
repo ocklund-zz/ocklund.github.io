@@ -21,6 +21,10 @@
       {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
+        "mainEntityOfPage":{
+          "@type":"WebPage",
+          "@id":"{{ site.url }}{{ page.url }}"
+        },
         "headline": "{{ page.title }}",
         "image": {
           "@type": "ImageObject",
