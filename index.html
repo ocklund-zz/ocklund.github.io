@@ -1,42 +1,169 @@
----
-title: Home
-layout: default
----
-			<div class="grid" id="main-grid">
-				<section id="intro">
-					<h3><a href="#intro">Kenneth Ocklund</a></h3>
-					<p>I write code and fiction. Read my latest action packed novel "Kalis fjärde hand" (in Swedish). Out now as e-book at iTunes and Google Play.</p>
-					<p><a href="https://itunes.apple.com/se/book/kalis-fjarde-hand/id1142386125?mt=11">
-            		<img src="/images/kalis_cover.jpg", width="150", height="225", class="shadow img-center"></a></p>
-        			<p><a href="https://itunes.apple.com/se/book/kalis-fjarde-hand/id1142386125?mt=11">
-            		<img src="/images/ibooks_se.jpg", width="129", height="46", alt="Get it on iTunes" class="img-center"></a></p>
-					<p><a href="https://play.google.com/store/books/details/Kenneth_Ocklund_Kalis_fj%C3%A4rde_hand?id=JaTSDAAAQBAJ">
-            		<img src="/images/google_play.png", width="129", height="45", alt="Get it on Google Play" class="img-center"></a></p>
-					<p>Find out how everything began. Read the first part "Shivas tredje öga" (in Swedish). Available as e-book at iTunes and Google Play.</p>
-					<p><a href="https://itunes.apple.com/se/book/shivas-tredje-oga/id989530003?mt=11&at=&ct=SV_se&ign-mpt=uo%3D6">
-            		<img src="/images/shivas_cover.jpg", width="150", height="225", class="shadow img-center"></a></p>
-        			<p><a href="https://itunes.apple.com/se/book/shivas-tredje-oga/id989530003?mt=11&at=&ct=SV_se&ign-mpt=uo%3D6">
-            		<img src="/images/ibooks_se.jpg", width="129", height="46", alt="Get it on iTunes" class="img-center"></a></p>
-					<p><a href="https://play.google.com/store/books/details/Kenneth_Ocklund_Shivas_tredje_%C3%B6ga?id=APQ3CQAAQBAJ">
-            		<img src="/images/google_play.png", width="129", height="45", alt="Get it on Google Play" class="img-center"></a></p>
-				</section>
-				<section id="blog">
-					<h3><a href="#blog">Blog</a></h3>
-					<ul>
-						{% for post in site.posts %}
-						<li>
-							<p><strong>{{ post.date | date: "%Y-%m-%d" }}</strong></p>
-							{{ post.excerpt | replace:'amp-img','img' | remove:'width="500"' | replace:'height=','data=' | truncatewords:50 }}
-							{% if post.content.size > post.excerpt.size %}
-							<p><a href="{{ post.url }}">Read more...</a></p>
-							{% endif %}
-						</li>
-						{% endfor %}
-					</ul>
-				</section>
-				<section id="contact">
-					<h3><a href="#contact">Contact Me</a></h3>
-					<p><a href="https://twitter.com/ocklund">Twitter</a> | <a href="https://www.linkedin.com/in/ocklund">LinkedIn</a></p>
-				</section>
-			</div>
-		</div>
+<!doctype html>
+<html ⚡>
+  <head>
+    <meta charset="utf-8">
+    <title>ocklund.com</title>
+    <link rel="canonical" href="index.html">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-video"
+        src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+    <script async custom-element="amp-story"
+        src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400" rel="stylesheet">
+    <style amp-custom>
+      amp-story {
+        font-family: 'Oswald',sans-serif;
+        color: #fff;
+      }
+      amp-story-page {
+        background-color: #000;
+      }
+      h1 {
+        font-weight: bold;
+        font-size: 2.875em;
+        font-weight: normal;
+        line-height: 1.174;
+      }
+      p {
+        font-weight: normal;
+        font-size: 1.3em;
+        line-height: 1.5em;
+        color: #fff;
+      }
+      q {
+        font-weight: 300;
+        font-size: 1.1em;
+      }
+      amp-story-grid-layer.bottom {
+        align-content:end;
+      }
+      amp-story-grid-layer.noedge {
+        padding: 0px;
+      }
+      amp-story-grid-layer.center-text {
+        align-content: center;
+      }
+      .wrapper {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+      }
+      .banner-text {
+        text-align: center;
+        background-color: #000;
+        line-height: 2em;
+      }
+      .invert {
+        color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Cover page -->
+    <amp-story standalone
+        title="ocklund.com"
+        publisher="Kenneth Ocklund"
+        publisher-logo-src="assets/AMP-Brand-White-Icon.svg"
+        poster-portrait-src="assets/cover.jpg">
+      <amp-story-page id="cover">
+        <amp-story-grid-layer template="fill">
+          <amp-img src="assets/cover.jpg"
+              width="720" height="1280"
+              layout="responsive">
+          </amp-img>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="thirds">
+          <h1 grid-area="middle-third">ocklund.com</h1>
+          <p grid-area="lower-third">Hi there! Nice of you to drop by my home
+            page! Right now I'm trying out some new stuff, playing with the
+            Google AMP Story component. Pretty neat, huh? So. Enjoy this short
+            story and you'll find ways to contact me at the end, if you like.
+            Oh, did I mention? I write code and fiction.
+          </p>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+      <!-- 2 layers (fill + thirds) -->
+      <amp-story-page id="page1">
+        <amp-story-grid-layer template="fill">
+          <amp-img src="assets/shiva.jpg"
+              width="720" height="1280"
+              layout="responsive">
+          </amp-img>
+        </amp-story-grid-layer>
+          <amp-story-grid-layer template="thirds">
+            <p grid-area="middle-third">
+              "Shiva's Third Eye" (in Swedish), was my
+              first fiction novel. An action-packed story about three friends
+              that happen to create the perfect global surveillance system and
+              become the target of the whole world's intelligence community.
+            </p>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+      <!-- 2 layers (fill + thirds) -->
+      <amp-story-page id="page2">
+        <amp-story-grid-layer template="fill">
+          <amp-img src="assets/kali.jpg"
+              width="720" height="1280"
+              layout="responsive">
+          </amp-img>
+        </amp-story-grid-layer>
+          <amp-story-grid-layer template="thirds">
+            <p grid-area="middle-third" class="invert">
+              "Kali's Fifth Hand" (in Swedish) is the
+              follow-up to "Shiva's Third Eye". This time our three friends take
+              on a Mexican cartel, American mercenaries, and are determined to
+              hack the stock exchange for the ultimate heist and big escape.
+            </p>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+      <!-- 3 layers (fill (video) + vertical + vertical) -->
+      <amp-story-page id="page3">
+        <amp-story-grid-layer template="fill">
+          <amp-video autoplay loop
+                width="720" height="1280"
+                poster="assets/squirrel.png"
+                layout="responsive">
+              <source src="assets/squirrel.mp4" type="video/mp4">
+          </amp-video>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical">
+          <h1>Problem solving 101</h1>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical" class="bottom">
+          <p>Gathering food for the whole winter is a daunting task for this
+            little fellow. So how does the squirrel do it? By collecting a
+            a few acorns every day. This is one way to approach problem solving:
+            Break it down to managable pieces, and solve them one at a time.
+            Just make sure you remember where you stored the acorns :D
+          </p>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+      <!-- 2 layers (fill + thirds) -->
+      <amp-story-page id="page4" background-audio="assets/diables.m4a">
+        <amp-story-grid-layer template="fill">
+          <amp-img src="assets/cafe-sve.jpg"
+              width="720" height="1280"
+              layout="responsive">
+          </amp-img>
+        </amp-story-grid-layer>
+          <amp-story-grid-layer template="thirds">
+            <h1 grid-area="upper-third">Time to go</h1>
+            <p grid-area="middle-third">
+              Short is sweet, indeed. I'll leave you with the hypnotic beat of
+              the "Diables de Sant Cugat", just to show off the sound
+              capabilities of AMP Story. Pump up that volume and dance!
+            </p>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+      <!-- Bookend -->
+      <amp-story-bookend src="bookend.json" layout="nodisplay"></amp-story-bookend>
+    </amp-story>
+  </body>
+</html>

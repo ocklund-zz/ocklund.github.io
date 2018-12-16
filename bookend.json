@@ -1,0 +1,32 @@
+{
+  "bookendVersion": "v1.0",
+  "shareProviders": [
+    "twitter",
+    "facebook",
+    "email"
+  ],
+  "components": [
+    {
+      "type": "heading",
+      "text": "Contact"
+    },
+    {
+      "type": "small",
+      "title": "View my profile",
+      "url": "https://linkedin.com/in/ocklund/",
+      "image": "assets/linkedin.png"
+    },
+    {
+      "type": "small",
+      "title": "Read my tweets",
+      "url": "https://twitter.com/ocklund",
+      "image": "assets/twitter.png"
+    },
+    {
+      "type": "small",
+      "title": "Follow my flow",
+      "url": "https://instagram.com/ocklund/",
+      "image": "assets/instagram.png"
+    }
+  ]
+}
